@@ -1,12 +1,18 @@
 # Piano-Piano
 
-This small app will consist in a user uploading its own profile (like linkedin but smaller) and from a job request creating a new recommendation letter using ChatGPT API.
+### Flow
+1. User will upload it's profile information (skills with seniority, experience and about)
+2. Then select a job 
+3. The app will create a recommendation letter given the user profile and the requested job description using ChatGPT API
 
 ## Endpoints
 - GET: profile
 - POST: profile
 - GET: presentation
 - POST: presentation
+- GET: jobs
+
+No CRUD for the jobs by the time
 
 # Tech stack
 ## Front
@@ -16,5 +22,4 @@ This small app will consist in a user uploading its own profile (like linkedin b
 - postgreSql hosted in supabase
 
 ## Backend 
-- .Net Core Minimal API
-- With tests
+- .Net Core 7.0 Minimal API
